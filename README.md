@@ -1,6 +1,6 @@
 # Wordle Clone
 
-I love playing Wordle, so I built my own version in React — partly for fun, partly as a small project to practice animation, state management, and accessibility basics.
+I love playing Wordle, so I built my own version in React. Partly for fun but also as a small project to practice animation, state management, and accessibility basics.
 
 ## Fun Details
 
@@ -32,14 +32,13 @@ I love playing Wordle, so I built my own version in React — partly for fun, pa
 
 - Word list source: [cfreshman's word list gist](https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b)
 - Guesses are checked against this project's own `words.js` list rather than an external dictionary, so a real word can still get rejected if it hasn't been added yet. This same list doubles as the pool of possible answers, so entries should be real 5-letter words you'd be happy to see as either a guess or a solution.
-- No persistence — progress resets on refresh (by design, no `localStorage` used).
+- No persistence (at this level felt it was unnecessary) progress resets on refresh, no `localStorage` used).
 
 ## Possible next steps
 
 - Tile-level `aria-label`s so a screen reader announces each letter's result (correct/present/absent), not just the keyboard
 - A stats/streak tracker using `localStorage`
 - Split the word list into a small curated "answers" pool and a bigger "accepted guesses" pool, closer to how the real game works
-- A custom color theme
 - Sound effects on submit/win/loss
 
 ## New things I learnt
