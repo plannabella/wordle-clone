@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef }  from "react";
 import { WORDS } from "./words";
 
 const KEYBOARD = [
@@ -7,10 +7,7 @@ const KEYBOARD = [
   ["ENTER","Z","X","C","V","B","N","M","⌫"],
 ];
 
-// Only 5-letter words are valid here — the board is fixed at 5 columns.
-const VALID_WORDS = new Set(
-  WORDS.filter(w => w.length === 5).map(w => w.toUpperCase())
-);
+const VALID_WORDS = new Set(WORDS.map(w => w.toUpperCase()));
 
 function pickWord() {
   const list = [...VALID_WORDS];
