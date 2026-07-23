@@ -6,6 +6,9 @@ I love playing Wordle, so I built my own version in React. Partly for fun but al
 
 - Added some Brooklyn Nine-Nine references!
 
+🎮 **[Play it live here](https://wordle-clone-three-inky.vercel.app/)**
+
+
 ## Features
 
 - 6-row / 5-column guess board with per-letter feedback (correct / present / absent)
